@@ -65,7 +65,7 @@
 	<java classname="${main.server}">	
 		<classpath refid="cp" />
 	</java>
-	<java classname="{main.client}">	
+	<java classname="${main.client}">	
 		<classpath refid="cp" />
 	</java>
   </target>

@@ -146,13 +146,13 @@ public abstract class AbstractTestBooking extends AbstractTesting {
 				assessTotalReservations(name,scriptLineTokens);
 			} catch (Exception e) { throw new ApplicationException(e); }
 		} else if (cmd.equals("BMR")){
-			//System.out.println("Reservations by "+name+":\n");
-			//int i = 1;
-			//try {
-			//	for(Reservation r : getReservationsByRenter(name)) {
-			//	//	System.out.println(i++ +") "+r.toString()+"\n");
-			//	}
-			//} catch (Exception e) { throw new ApplicationException(e); }
+			System.out.println("Reservations by "+name+":\n");
+			int i = 1;
+			try {
+				for(Reservation r : getReservationsByRenter(name)) {
+					System.out.println(i++ +") "+r.toString()+"\n");
+				}
+			} catch (Exception e) { throw new ApplicationException(e); }
 		} else {
 			throw new IllegalArgumentException("Unknown command");
 		}

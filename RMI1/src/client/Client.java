@@ -143,7 +143,6 @@ public class Client extends AbstractTestBooking {
 	@Override
 	protected int getNumberOfReservationsForCarType(String carType) throws Exception {
 		int amount = icrc.getNumberOfReservationsForCarType(carType);
-		System.out.println(amount);
 		return amount;
 	}
 }
